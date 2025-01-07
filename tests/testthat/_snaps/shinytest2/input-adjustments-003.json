@@ -1,0 +1,99 @@
+{
+  "input": {
+    "action_button": 2,
+    "input_1-radio_anz_zi": "2-4-Zi",
+    "input_1-radio_net_gross": "netto",
+    "input_1-radio_whg_qm": "qm",
+    "input_1-select_raum": "Statistische Quartiere",
+    "results_1-choice_year": "2024"
+  },
+  "output": {
+    "results_1-plot": {
+      "src": "[image data hash: 7e00e8f0b2b60a9a8e69ffddcab33b50]",
+      "width": 556.65625,
+      "height": 400,
+      "alt": "Gruppierter Bar Chart des mittleren Mietpreises sowie des 96%-Konfidenzintervalls für die Stadt Zürich nach den ausgewählten Kriterien, separat für gemeinnützige und nicht gemeinnützige Wohnungen. Für genaue Werte laden Sie bitte die Daten als csv oder Excel herunter.",
+      "coordmap": {
+        "panels": [
+          {
+            "panel": 1,
+            "row": 1,
+            "col": 1,
+            "panel_vars": {
+
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "domain": {
+              "left": 0,
+              "right": 44,
+              "bottom": 0.4,
+              "top": 35.6,
+              "discrete_limits": {
+                "y": [
+                  "Hirzenbach",
+                  "Schwamendingen-Mitte",
+                  "Saatlen",
+                  "Seebach",
+                  "Oerlikon",
+                  "Affoltern",
+                  "Wipkingen",
+                  "Höngg",
+                  "Altstetten",
+                  "Albisrieden",
+                  "Weinegg",
+                  "Mühlebach",
+                  "Seefeld",
+                  "Witikon",
+                  "Hirslanden",
+                  "Hottingen",
+                  "Fluntern",
+                  "Oberstrass",
+                  "Unterstrass",
+                  "Escher Wyss",
+                  "Gewerbeschule",
+                  "Hard",
+                  "Langstrasse",
+                  "Werd",
+                  "Sihlfeld",
+                  "Friesenberg",
+                  "Alt-Wiedikon",
+                  "Enge",
+                  "Leimbach",
+                  "Wollishofen",
+                  "City",
+                  "Lindenhof",
+                  "Hochschulen",
+                  "Rathaus",
+                  "Ganze Stadt"
+                ]
+              }
+            },
+            "mapping": {
+              "data_id": "data_id",
+              "tooltip": "tooltip",
+              "x": "qu50",
+              "y": ".data[[\"gliederung_lang\"]]",
+              "fill": "gemeinnuetzig_lang"
+            },
+            "range": {
+              "left": 124.4086299709423,
+              "right": 551.9153175591532,
+              "bottom": 306.1467137329503,
+              "top": 4.084682440846824
+            }
+          }
+        ],
+        "dims": {
+          "width": 556.65625,
+          "height": 400
+        }
+      }
+    }
+  },
+  "export": {
+
+  }
+}
