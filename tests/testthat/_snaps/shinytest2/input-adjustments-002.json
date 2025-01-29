@@ -1,0 +1,70 @@
+{
+  "input": {
+    "action_button": 1,
+    "input_1-radio_anz_zi": "3-Zi",
+    "input_1-radio_net_gross": "netto",
+    "input_1-radio_whg_qm": "qm",
+    "input_1-select_raum": "Ganze Stadt",
+    "results_1-choice_year": "2024"
+  },
+  "output": {
+    "results_1-plot": {
+      "src": "[image data hash: c611848a9fba9394c7637549a9988d58]",
+      "width": 556.65625,
+      "height": 400,
+      "alt": "Gruppierter Bar Chart des mittleren Mietpreises sowie des 96%-Konfidenzintervalls für die Stadt Zürich nach den ausgewählten Kriterien, separat für gemeinnützige und nicht gemeinnützige Wohnungen. Für genaue Werte laden Sie bitte die Daten als csv oder Excel herunter.",
+      "coordmap": {
+        "panels": [
+          {
+            "panel": 1,
+            "row": 1,
+            "col": 1,
+            "panel_vars": {
+
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "domain": {
+              "left": 0,
+              "right": 37.9,
+              "bottom": 0.4,
+              "top": 6.6,
+              "discrete_limits": {
+                "y": [
+                  "Bestand Mietverträge über 20 Jahre",
+                  "Bestand Mietverträge 11-20 Jahre",
+                  "Bestand Mietverträge 2–10 Jahre",
+                  "Neubezug bis 2 Jahre",
+                  "Neubau bis 2 Jahre",
+                  "Ganze Stadt"
+                ]
+              }
+            },
+            "mapping": {
+              "data_id": "data_id",
+              "tooltip": "tooltip",
+              "x": "qu50",
+              "y": ".data[[\"gliederung_lang\"]]",
+              "fill": "gemeinnuetzig_lang"
+            },
+            "range": {
+              "left": 556.4433966376091,
+              "right": 560.9714757160651,
+              "bottom": 258.6795137329503,
+              "top": 4.084682440846824
+            }
+          }
+        ],
+        "dims": {
+          "width": 556.65625,
+          "height": 400
+        }
+      }
+    }
+  },
+  "export": {
+
+  }
+}

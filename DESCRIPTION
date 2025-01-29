@@ -1,0 +1,43 @@
+Package: MPEapp
+Title: MPE Shiny app (golem)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Hänzi", "Sara", , "sara.haenzi@zuerich.ch")
+Description: Shiny app built with golem on Zurich rent prices
+License: BSD-3-Clause license
+Imports: 
+    config (>= 0.3.2),
+    data.table,
+    dplyr,
+    forcats,
+    ggiraph,
+    ggplot2,
+    glue,
+    golem (>= 0.4.1),
+    here,
+    icons (>= 0.2.0),
+    janitor,
+    openxlsx,
+    pkgload,
+    shiny (>= 1.9.0),
+    shinyWidgets,
+    showtext,
+    sysfonts,
+    tibble,
+    zuericolors (>= 0.2.2),
+    zuericssstyle (>= 0.2.1),
+    zueritheme (>= 0.0.1.9001)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: 
+    shinytest2,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)
+Remotes: 
+    github::StatistikStadtZuerich/zuericssstyle,
+    github::mitchelloharawild/icons,
+    github::StatistikStadtZuerich/zueritheme,
+    github::StatistikStadtZuerich/zuericolors

@@ -1,0 +1,16 @@
+{
+  "input": {
+    "action_button": 0,
+    "input_1-radio_anz_zi": "3-Zi",
+    "input_1-radio_net_gross": "netto",
+    "input_1-radio_whg_qm": "qm",
+    "input_1-select_raum": "Ganze Stadt",
+    "results_1-choice_year": "2024"
+  },
+  "output": {
+
+  },
+  "export": {
+
+  }
+}
