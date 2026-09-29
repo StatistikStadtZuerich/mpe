@@ -1,0 +1,34 @@
+include:
+  # use template for all stages 
+  - project: "OE-7035/ssz-da/templates/pipeline-templates"
+    ref: v1.1.6
+    file: "stages.yml"
+  # use template for gitlab pipeline to deploy to shinyapps.io
+  - project: "OE-7035/ssz-da/templates/pipeline-templates"
+    ref: v1.1.6
+    file: "deploy-to-shinyapps.yml"
+  # use template for gitlab pipeline to push main to github 
+  - project: "OE-7035/ssz-da/templates/pipeline-templates"
+    ref: v1.1.6
+    file: "publish-to-github.yml"
+  # use template for gitlab pipeline to test/check r package
+  - project: "OE-7035/ssz-da/templates/pipeline-templates"
+    ref: v1.1.6
+    file: "r-check-and-build-packages.yml"
+
+# run only tests, as devtools::check currently does not work with shinytest2 setup (does not find any of the package's functions)
+r-testthat-test:
+  extends:
+    - .r-testthat-test
+
+shiny-deploy-int:
+  extends:
+    - .shiny-deploy-int
+
+shiny-deploy-prod:
+  extends:
+    - .shiny-deploy-prod
+
+publish-to-github-orphan-remove-fonts:
+  extends:
+    - .publish-to-github-orphan-remove-fonts
